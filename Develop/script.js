@@ -54,7 +54,7 @@ function time() {
     var currentHour = moment().hours();
 
     // function for each class block to determine is past, present, or future
-    $(".block").each(function () }
+    $(".block").each(function () {
 
           // variable "hour" holds id hour from class block and pareInt is used to change it from a string to an integer.
           var hour = parseInt($(this).attr("id"));
@@ -82,6 +82,9 @@ function time() {
             // adds green to blocks
             $(this).addClass("future");
           }
+        });
+
+};
 
 // call the funtion time()
 time();
